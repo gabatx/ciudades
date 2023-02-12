@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Ciudades</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ciudades">Ciudades</string>
+    <string name="config_ciudad">Configurar ciudad</string>
+    <string name="mapa">Mapa</string>
+    <string name="buscar">Buscar</string>
+    <string name="borrarTodasCiudades">Borrar todas las ciudades</string>
+    <string name="introduce_texto_buscar">Introduce la ciudad a buscar:</string>
+    <string name="malaga">Malaga</string>
+    <string name="espa_a">España</string>
+    <string name="borrarCiudad">Borrar</string>
+    <string name="editarCiudad">Editar</string>
+    <string name="visitados">Visitados</string>
+    <string name="camara">Cámara</string>
+    <string name="location">Ub. act.</string>
+</resources>

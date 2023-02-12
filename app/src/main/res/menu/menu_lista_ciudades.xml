@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/botonBorrarTodosContactos"
+            android:title="@string/borrarTodasCiudades"
+            android:icon="@android:drawable/ic_menu_delete"
+            app:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/switchActionBarVisitados"
+            android:title="@string/visitados"
+            app:actionViewClass="androidx.appcompat.widget.SwitchCompat"
+            app:showAsAction="ifRoom"
+            app:actionLayout="@layout/switch_item" />
+</menu>

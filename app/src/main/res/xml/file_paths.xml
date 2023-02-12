@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    external-files-path -> Comparte directorios en el almacenamiento interno.
+    name="my_images" -> Texto a usar como segmento de ruta a los URI
+    path="." -> Comparte el subdirectorio “Pictures” del almacenamiento interno de cualquier directorio
+    -->
+    <external-files-path
+            name="my_images"
+            path="." />
+</paths>

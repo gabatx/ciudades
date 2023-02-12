@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.CiudadDetalleFragment"
+        android:id="@+id/frameLayout6">
+
+    <ImageView
+            android:src="@drawable/paris"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            tools:src="@tools:sample/backgrounds/scenic"
+            android:id="@+id/imagenDetalle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:scaleType="centerCrop" />
+
+    <TextView
+            android:text="Ciudad:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/nombreCiudadDetalle"
+            app:layout_constraintTop_toTopOf="@+id/nombreCiudadDetalle"
+            android:layout_marginStart="32dp" />
+
+    <TextView
+            android:text="Paris"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombreCiudadDetalle"
+            android:textSize="22sp"
+            app:layout_constraintStart_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/imagenDetalle"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/iconoVisitadaDetalle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/nombrePaisDetalle"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+            android:text="Pais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/nombreCiudadDetalle"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            android:layout_marginTop="8dp" />
+
+    <TextView
+            android:text="Francia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombrePaisDetalle"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="@+id/nombreCiudadDetalle"
+            app:layout_constraintEnd_toStartOf="@+id/textoVisitadoDetalle"
+            app:layout_constraintTop_toBottomOf="@+id/nombreCiudadDetalle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/textView3" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+            android:scaleType="centerInside"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize20Percent"
+            android:src="@drawable/ic_baseline_card_travel_24"
+            android:background="@color/md_theme_secondary"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/iconoVisitadaDetalle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/textoVisitadoDetalle"
+            app:layout_constraintTop_toTopOf="@+id/nombreCiudadDetalle"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+            android:text="No visitado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textoVisitadoDetalle"
+            app:layout_constraintTop_toBottomOf="@+id/iconoVisitadaDetalle"
+            app:layout_constraintEnd_toEndOf="@+id/iconoVisitadaDetalle"
+            app:layout_constraintStart_toStartOf="@+id/iconoVisitadaDetalle"
+            android:layout_marginTop="8dp"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+    <fragment
+            android:id="@+id/mapDetalleCiudad"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoVisitadoDetalle"
+            android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+            android:text="Distancia:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/nombrePaisDetalle"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintBottom_toTopOf="@+id/mapDetalleCiudad"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp" />
+
+    <TextView
+            android:text="1300 km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/distanciaDetalle"
+            app:layout_constraintTop_toTopOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/nombrePaisDetalle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

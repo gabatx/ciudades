@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/navigation"
+        app:startDestination="@id/app_bar_Listado_Ciudades">
+
+    <fragment
+            android:id="@+id/app_bar_Listado_Ciudades"
+            android:name="com.example.ciudades.ui.fragment.ListaCiudadesFragment"
+            android:label="@string/ciudades"
+            tools:layout="@layout/fragment_lista_ciudades" >
+        <action
+                android:id="@+id/action_app_bar_Listado_Ciudades_to_ciudadDetalleFragment"
+                app:destination="@id/ciudadDetalleFragment" />
+        <action
+                android:id="@+id/action_app_bar_Listado_Ciudades_to_app_bar_Config_Ciudad"
+                app:destination="@id/app_bar_Config_Ciudad" />
+    </fragment>
+    <fragment
+            android:id="@+id/app_bar_Mapa_Ciudades"
+            android:name="com.example.ciudades.ui.fragment.MapaCiudadesFragment"
+            android:label="@string/mapa"
+            tools:layout="@layout/fragment_mapa_ciudades" >
+        <action
+                android:id="@+id/action_app_bar_Mapa_Ciudades_to_ciudadDetalleFragment"
+                app:destination="@id/ciudadDetalleFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/app_bar_Config_Ciudad"
+            android:name="com.example.ciudades.ui.fragment.ConfigCiudadFragment"
+            android:label="@string/config_ciudad"
+            tools:layout="@layout/fragment_config_ciudad">
+        <action
+                android:id="@+id/action_app_bar_Config_Ciudad_to_app_bar_Listado_Ciudades"
+                app:destination="@id/app_bar_Listado_Ciudades" />
+    </fragment>
+    <fragment
+            android:id="@+id/app_bar_Buscar_Ciudad"
+            android:name="com.example.ciudades.ui.fragment.BuscadorCiudadFragment"
+            android:label="@string/buscar"
+            tools:layout="@layout/fragment_buscador_ciudad" >
+        <action
+                android:id="@+id/action_app_bar_Buscar_to_buscarResultadoFragment"
+                app:destination="@id/buscarResultadoFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/buscarResultadoFragment"
+            android:name="com.example.ciudades.ui.fragment.BuscarResultadoFragment"
+            android:label="Resultado"
+            tools:layout="@layout/fragment_buscar_resultado" >
+        <action
+                android:id="@+id/action_buscarResultadoFragment_to_ciudadDetalleFragment"
+                app:destination="@id/ciudadDetalleFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/ciudadDetalleFragment"
+            android:name="com.example.ciudades.ui.fragment.CiudadDetalleFragment"
+            android:label="Ciudad"
+            tools:layout="@layout/fragment_ciudad_detalle" >
+        <action
+                android:id="@+id/action_ciudadDetalleFragment_to_app_bar_Config_Ciudad"
+                app:destination="@id/app_bar_Config_Ciudad" />
+    </fragment>
+</navigation>

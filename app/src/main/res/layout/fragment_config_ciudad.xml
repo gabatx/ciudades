@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ui.fragment.ConfigCiudadFragment"
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_theme_secondary"
+        tools:ignore="MissingDefaultResource">
+
+    <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ScrollViewCount"
+            app:layout_constraintBottom_toTopOf="@+id/botonAniadirCiudad">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/guidelineStartNuevCiud"
+                    app:layout_constraintGuide_begin="20dp"
+                    android:orientation="vertical" />
+
+            <androidx.constraintlayout.widget.Guideline
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/guidelineEndConfigCiud"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="20dp" />
+
+            <fragment
+                    android:id="@+id/map"
+                    android:name="com.example.ciudades.utils.MapaScroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/botonUbicacionActual"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                    android:text="Selecciona la ubicación"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineStartNuevCiud"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintTop_toTopOf="@+id/botonUbicacionActual"
+                    app:layout_constraintBottom_toBottomOf="@+id/botonUbicacionActual"
+                    android:layout_marginTop="16dp" />
+
+            <TextView
+                    android:background="@color/md_theme_secondary"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:id="@+id/fondo_boton"
+                    app:layout_constraintTop_toBottomOf="@+id/map"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPaisConfigCiud"
+                    app:layout_constraintBottom_toTopOf="@+id/botonAniadirImagen"
+                    android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineStartNuevCiud"
+                    android:id="@+id/textInputLayoutCiudadNuevCiud"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineEndConfigCiud"
+                    android:hint="Ciudad">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textInputeditCiudad" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayoutCiudadNuevCiud"
+                    android:id="@+id/textInputLayoutPaisConfigCiud"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineStartNuevCiud"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineEndConfigCiud"
+                    android:layout_marginTop="8dp"
+                    android:hint="Pais">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textInputeditPais" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Switch
+                    android:text="Visitado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/switchVisitado"
+                    tools:ignore="UseSwitchCompatOrMaterialXml"
+                    app:layout_constraintStart_toStartOf="@+id/guidelineStartNuevCiud"
+                    app:layout_constraintBottom_toBottomOf="@+id/botonAniadirImagen"
+                    app:layout_constraintTop_toTopOf="@+id/botonAniadirImagen" />
+
+            <Button
+                    android:text="Selc. imag"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/botonAniadirImagen"
+                    android:backgroundTint="@color/md_theme_secondary"
+                    app:layout_constraintTop_toTopOf="@+id/imagenMiniatura"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="@+id/botonCamara"
+                    app:layout_constraintStart_toStartOf="@+id/botonCamara" />
+
+            <Button
+                    android:id="@+id/botonCamara"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/camara"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/md_theme_secondary"
+                    app:iconTint="@color/white"
+                    app:icon="@drawable/ic_baseline_camera_alt_24"
+                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    app:layout_constraintTop_toBottomOf="@+id/botonAniadirImagen"
+                    app:layout_constraintEnd_toStartOf="@+id/imagenMiniatura"
+                    android:layout_marginEnd="8dp" />
+
+            <ImageView
+                    android:src="@drawable/paris"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    tools:src="@drawable/paris"
+                    android:id="@+id/imagenMiniatura"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPaisConfigCiud"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineEndConfigCiud"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="TODO"
+                    android:scaleType="fitXY" />
+
+            <TextView
+                    android:text="Latitud:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toTopOf="@+id/map"
+                    android:layout_marginTop="16dp" />
+
+            <TextView
+                    android:text="Longitud:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4"
+                    app:layout_constraintStart_toStartOf="@+id/textView2"
+                    android:textColor="@color/white"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                    android:text="0.0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/latitudMarcador"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="@+id/textView2"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white" />
+
+            <TextView
+                    android:text="0.0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/longitudMarcador"
+                    app:layout_constraintStart_toEndOf="@+id/textView4"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView4"
+                    app:layout_constraintTop_toTopOf="@+id/textView4"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/white" />
+
+            <Button
+                    android:id="@+id/botonUbicacionActual"
+                    app:icon="@drawable/ic_baseline_my_location_24"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/md_theme_secondary"
+                    app:iconTint="@color/white"
+                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    app:layout_constraintEnd_toStartOf="@+id/guidelineEndConfigCiud"
+                    app:layout_constraintTop_toBottomOf="@+id/botonCamara"
+                    android:layout_marginTop="16dp" />
+
+            <ListView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/listViewCiudades"
+                    android:background="@color/blanco_palido"
+                    android:elevation="@dimen/cardview_compat_inset_shadow"
+
+
+                    android:layout_marginTop="32dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+            android:text="Añadir ciudad"
+            android:backgroundTint="@color/md_theme_secondaryContainer"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/botonAniadirCiudad"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

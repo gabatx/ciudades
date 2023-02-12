@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RobotoRegular">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="RobotoBold">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <!-- Toolbar personalizado -->
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:itemBackground">@color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="temaAlertDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/md_theme_primary</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize20Percent" parent="">
+        <item name="cornerSize">20%</item>
+    </style>
+
+    <!--RatingBar-->
+<!--    <style name="CheckboxFavoritosPersonalizado" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">-->
+<!--        <item name="android:button">@drawable/ic_baseline_favorite_border_24</item>-->
+<!--        <item name="android:background">@android:color/transparent</item>-->
+<!--    </style>-->
+
+</resources>

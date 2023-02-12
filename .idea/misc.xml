@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../../../../../../layout/custom_preview.xml" value="0.2" />
+        <entry key="..\:/01_Curso/Asignaturas/Android/02_ejercicios/25_Ciudades/app/src/main/res/layout/activity_main.xml" value="0.3307291666666667" />
+        <entry key="..\:/01_Curso/Asignaturas/Android/02_ejercicios/25_Ciudades/app/src/main/res/layout/fragment_buscador_ciudad.xml" value="0.3307291666666667" />
+        <entry key="..\:/01_Curso/Asignaturas/Android/02_ejercicios/25_Ciudades/app/src/main/res/layout/fragment_ciudad_detalle.xml" value="0.33489583333333334" />
+        <entry key="..\:/01_Curso/Asignaturas/Android/02_ejercicios/25_Ciudades/app/src/main/res/layout/fragment_config_ciudad.xml" value="0.334375" />
+        <entry key="..\:/01_Curso/Asignaturas/Android/02_ejercicios/25_Ciudades/app/src/main/res/layout/fragment_lista_ciudades.xml" value="0.33489583333333334" />
+        <entry key="..\:/01_Curso/Asignaturas/Android/02_ejercicios/25_Ciudades/app/src/main/res/layout/holder_ciudad.xml" value="0.25" />
+        <entry key="..\:/01_Curso/Asignaturas/Android/02_ejercicios/25_Ciudades/app/src/main/res/menu/menu_lista_ciudades.xml" value="0.3307291666666667" />
+        <entry key="..\:/01_Curso/Asignaturas/Android/02_ejercicios/25_Ciudades/app/src/main/res/menu/menu_superior_detalle_ciudad.xml" value="0.33489583333333334" />
+        <entry key="..\:/01_Curso/Asignaturas/Android/02_ejercicios/25_Ciudades/app/src/main/res/menu/menu_superior_nueva_ciudad.xml" value="0.33489583333333334" />
+        <entry key="app/src/main/res/drawable/fondo_viajado_activado.xml" value="0.4085" />
+        <entry key="app/src/main/res/drawable/fondo_viajado_desactivado.xml" value="0.4075" />
+        <entry key="app/src/main/res/drawable/ic_baseline_card_travel_24.xml" value="0.4085" />
+        <entry key="app/src/main/res/drawable/ic_baseline_clear_24.xml" value="0.4085" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_buscador_ciudad.xml" value="0.409375" />
+        <entry key="app/src/main/res/layout/fragment_buscar_resultado.xml" value="0.409375" />
+        <entry key="app/src/main/res/layout/fragment_ciudad_detalle.xml" value="0.40307692307692305" />
+        <entry key="app/src/main/res/layout/fragment_config_ciudad.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_editar_ciudad.xml" value="0.409375" />
+        <entry key="app/src/main/res/layout/fragment_lista_ciudades.xml" value="0.409375" />
+        <entry key="app/src/main/res/layout/fragment_mapa_ciudades.xml" value="0.409375" />
+        <entry key="app/src/main/res/layout/fragment_nueva_ciudad.xml" value="0.40208333333333335" />
+        <entry key="app/src/main/res/layout/holder_ciudad.xml" value="0.3851851851851852" />
+        <entry key="app/src/main/res/layout/switch_item.xml" value="0.409375" />
+        <entry key="app/src/main/res/layout/switch_toolbar.xml" value="0.29814814814814816" />
+        <entry key="app/src/main/res/menu/menu_inferior.xml" value="0.33" />
+        <entry key="app/src/main/res/menu/menu_lista_ciudades.xml" value="0.409375" />
+        <entry key="app/src/main/res/menu/menu_superior_detalle_ciudad.xml" value="0.4083333333333333" />
+        <entry key="app/src/main/res/menu/menu_superior_nueva_ciudad.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Embedded JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/app_bar_Listado_Ciudades"
+            android:icon="@drawable/ic_baseline_format_listado_ciudades_24"
+            android:title="@string/ciudades"
+            app:showAsAction="ifRoom" />
+
+    <item
+            android:id="@+id/app_bar_Config_Ciudad"
+            android:icon="@drawable/ic_baseline_open_in_new_24"
+            android:title="@string/config_ciudad"
+            app:showAsAction="ifRoom" />
+
+    <item
+            android:id="@+id/app_bar_Mapa_Ciudades"
+            android:icon="@drawable/ic_baseline_map_24"
+            android:title="@string/mapa"
+            app:showAsAction="ifRoom" />
+
+    <item
+            android:id="@+id/app_bar_Buscar_Ciudad"
+            android:icon="@drawable/ic_baseline_search_24"
+            android:title="@string/buscar"
+            app:showAsAction="ifRoom" />
+</menu>
